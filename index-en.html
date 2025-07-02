@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sereen's Portofilio</title>
+    <link rel="icon" type="images/favicon" href="assets/icons/Logo48px.svg">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Data & Logic Scripts -->
+    <script src="js/data-en.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body class="dark">
+<!-- Header --> 
+<div class="header animate-up">
+    <div>
+        <nav class="navbar">
+
+            <ul class="sidebar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+
+            <img id="logo-img" src="assets/icons/Logo56pxLight.svg" alt="Sereen's Logo Image" class="logo">
+
+            <ul>
+                <li class="hide"><a href="#Home">Home</a></li>
+                <li class="hide"><a href="#About">About</a></li>
+                <li class="hide"><a href="#Skills">Skills</a></li>
+                <li class="hide"><a href="#Certifications">Certifications</a></li>
+                <li class="hide"><a href="#Projects">Projects</a></li>
+                <li class="hide"><a href="#Contact">Contact</a></li>
+                <li class="menu-button" onclick="event.preventDefault(); toggleSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                             viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+                             stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" 
+                             class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M4 6l16 0" />
+                            <path d="M4 12l16 0" />
+                            <path d="M4 18l16 0" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-actions">
+                <a href="index-ar.html" class="lang-toggle">AR</a>
+                <button id="theme-toggle" aria-label="Toggle Light Mode">
+                    <img id="theme-icon" src="assets/icons/Sun.svg" alt="Switch To Light Mode">
+                </button>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+    <!-- Main -->
+    <main>
+        <section id="Home" class="home-section">
+            <h4 class="animate-up">Hello, I'm</h4>
+            <h1 class="animate-up">Sereen Hussain</h1>
+            <h6 class="animate-up">Frontend Developer & AI Specialist | Passionate UI/UX Designer</h6>
+            <p class="animate-up">Crafting intelligent, user-centric digital experiences through thoughtful design and smart technologies.</p>
+
+            <div class="btn-social-group animate-left">
+                <div class="btn-group">
+                    <a href="assets/pdf/Sereen_Hussain_Resume.pdf" class="Primary" download>Download CV</a>
+                    <a href="#Projects" class="Secondary">View Projects</a>
+                </div>
+
+                <div class="social-icons animate-right">
+                    <a href="https://dribbble.com/bysereen" target="_blank" aria-label="Visit My Dribbble Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="delay-3 animate-right icons icon icon-tabler icons-tabler-outline icon-tabler-brand-dribbble"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 3.6c5 6 7 10.5 7.5 16.2" /><path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" /><path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" /></svg>
+                    </a>
+                    <a href="https://github.com/By-Sereen" target="_blank" aria-label="Visit My Git Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="delay-3 animate-right icons icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sereenhussain/" target="_blank" aria-label="Visit My Linkedin Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="delay-3 animate-right icons icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+                    </a>
+                    <a href="mailto:Bysereen@gmail.com" target="_blank" aria-label="Email Me">
+                        <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="delay-3 animate-right icons icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="About" class="sections">
+            <div class="section-title animate-up delay-1">
+                <h2>About me</h2>
+                <div class="about-me">
+                    <h6>Computer Science graduate with a passion for AI and UI/UX design. I enjoy building intelligent systems and crafting clean, user-friendly experiences. I'm always eager to learn, grow, and turn ideas into real solutions.</h6>
+                    <a href="assets/pdf/Sereen_Hussain_Resume.pdf" class="Primary" download>Download CV</a>
+                </div>
+            </div>
+            
+
+            <div class="about-me-cards">
+                <!-- Div For Education -->
+                <div class="about-me-card animate-left">
+                    <div class="title">
+                        <img src="assets/icons/Education.svg" alt="Education Icon">
+                        <h5>Education</h5>      
+                    </div>
+                    
+                    <div class="card-info">
+                        <p style="font-size: 0.8rem;font-weight: 400;">Jeddah, Saudi Arabia</p>
+                        <div class="place-date">
+                            <p class="Place-Date">King Abdulaziz University</p>
+                            <p class="Place-Date">Sep 2020 - June 2025</p>
+                        </div>
+                     </div>
+
+                    <div class="education-details">
+                        <p class="Title">Bachelor of Science in Computer Science</p>
+                        <p class="Card-Text">Graduating with a specialization in Artificial Intelligence (AI).<br>Maintained an excellent academic record with a GPA of 4.99 / 5.00.<br>Received the Certificate of Excellence across all five academic years.</p>
+                    </div>        
+                </div>
+
+                <!-- Div For Experience -->
+                <div class="about-me-card animate-right">
+                    <div class="title">
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#B24675"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-briefcase"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" /></svg>
+                        <h5>Experience</h5>
+                    </div>
+
+                    <div class="experince-info">
+                        <div class="one-experince">
+                            <p class="Title">Content Creator</p>
+                            <div class="place-date">
+                                <p class="Place-Date">Self-Initiated Learning Platform (Social Media)</p>
+                                <p class="Place-Date">Jan 2025 - Present</p>
+                            </div>
+                        </div>
+                        
+                        <div class="one-experince">
+                            <p class="Title">AI Intern</p>
+                            <div class="place-date">
+                                <p class="Place-Date">Aramco (SAIL Lab)</p>
+                                <p class="Place-Date">Jun 2024 - Aug 2024</p>
+                            </div>
+                        </div>  
+
+                        <div class="one-experince">
+                            <p class="Title">Graphic Designer</p>
+                            <div class="place-date">
+                                <p class="Place-Date">King Abdulaziz University (AI Club)</p>
+                                <p class="Place-Date">Sep 2023 - Oct 2024</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="Skills" class="sections">
+            <div class="section-title animate-up delay-1">
+                <h2>Skills</h2>
+                <h6>A curated set of technical and creative skills I've developed through education, hands-on experience, and continuous learning.</h6>
+            </div>
+            <div class="skills-boxes animate-right delay-1" id="skills-container"></div>
+        </section>
+
+        <section id="Certifications" class="sections">
+            <div class="section-title animate-up delay-1">
+                <h2>Certificates and Achievements</h2>
+                <h6>Recognitions and certifications that reflect my dedication to excellence and growth in AI, development, and design.</h6>
+            </div> 
+
+            <div class="certificate-control-bar animate-up delay-1">
+                <p>Click Button To Explore More</p>
+                <div class="certificate-control-arrows">
+                    <svg id="cert-left"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor" stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="arrowicons icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>
+                    <svg id="cert-right" xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor" stroke-width="1.5"  stroke-linecap="round"  stroke-linejoin="round"  class="arrowicons icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                </div>
+            </div>
+            <div class="certificates-grid-wrapper animate-right delay-1">
+                <div id="certificates-container" class="certificates-grid"></div>
+            </div>
+        </section>
+
+        <section id="Projects" class="sections">
+            <div class="section-title animate-up delay-1">
+                <h2>Projects</h2>
+                <h6>A selection of projects that showcase how I apply technology, creativity, and problem-solving to build meaningful solutions.</h6>
+            </div>
+            <div id="project-container" class="project-grid animate-left delay-1"></div>
+            <!-- PDF Modal -->
+            <div id="pdfModal" class="pdf-modal" style="display: none;">
+                <div class="pdf-modal-content">
+                    <span class="close-btn" onclick="closePdfModal()">&times;</span>
+                    <div id="pdfViewerContainer"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contact" class="sections">
+            <div class="section-title animate-up delay-1">
+            <h2>Get In Touch</h2>
+            <h6>Have a question or want to collaborate? I'd love to hear from you.</h6>
+            </div>
+
+            <div class="Contact-box">
+                <!-- Div For Contact Information-->
+                <div class="Contact-Information animate-right delay-1">
+                    <div class="cont-title">
+                        <p class="Contact-Title">Contact Information</p>
+                        <p>Reach out to me directly via email or phone</p>
+                    </div>
+
+                    <div class="contact-details">
+                        <img src="assets/icons/Mail.svg" alt="My Email">
+                        <div class="contact-info">
+                            <h5>Email</h5>
+                            <p><a href="mailto:Bysereen@gmail.com">BySereen@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-details">
+                        <img src="assets/icons/Phone.svg" alt="My Phone">
+                        <div class="contact-info">
+                            <h5>Phone</h5>
+                            <p><a href="tel:+966549906185">+966 549906185</a></p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="connect-withme">
+                        <h5>Connect with me:</h5>
+                        <div>
+                            <a href="https://www.linkedin.com/in/sereenhussain/" target="_blank" aria-label="Visit My Linkedin Profile">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icons icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg>
+                            </a>
+
+                            <a href="https://dribbble.com/bysereen" target="_blank" aria-label="Visit My Dribbble Profile">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icons icon icon-tabler icons-tabler-outline icon-tabler-brand-dribbble"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /><path d="M9 3.6c5 6 7 10.5 7.5 16.2" /><path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" /><path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" /></svg>
+                            </a>
+                            <a href="https://github.com/By-Sereen" target="_blank" aria-label="Visit My Git Profile">
+                                <svg xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 32 32"  fill="none"  stroke="currentColor"  stroke-width="1.75"  stroke-linecap="round"  stroke-linejoin="round"  class="icons icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+                            </a>
+                            
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Div For Form -->
+                <div class="form-container animate-left delay-1">
+                    <div class="form-title">
+                        <p class="Contact-Title">Send Me a Message</p>
+                        <p>Prefer writing it down? Fill out the form below and I'll get back to you shortly.</p>
+                    </div>
+                
+
+                    <!-- Form -->
+                    <form class="contact-form" name="submit-to-google-sheet">
+                        <div class="form-group two-column">
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input id="name" name="Name" type="text" placeholder="Sereen Hussain" minlength="2" required pattern="^[A-Za-z\u0600-\u06FF\s]+$" title="Name should contain only letters and spaces">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input id="email" name="Email" type="email" placeholder="sereen@example.com" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected hidden>Select a subject</option>
+                            <option value="Collaboration">Collaboration</option>
+                            <option value="Job">Job Opportunity</option>
+                            <option value="Question">General Question</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" placeholder="Share the details of your project, question, or idea..." required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button class="Secondary" type="reset">Reset</button>
+                            <button class="Primary" type="submit">Send</button>
+                        </div>
+                    </form>
+                    <div id="success-message">
+                        Message sent successfully!
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> 
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 <span style="color:#B24675;font-weight: 600;">Sereen</span> — Where intelligent systems meet purposeful design, and clean code.
+    </footer>
+</body>
+</html>
